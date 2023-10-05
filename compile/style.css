@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+:root {
+  --light-blue: #1C83FF;
+  --darker-blue: #1C83FF;
+  --hero-min-height: 90vh;
+  --complement_color: #393B4A;
+  --soft-background-color: #EAF2F9;
+  --soft-grey: #F9F9F9;
+}
+
+.section {
+  padding: 0 5.5rem;
+}
+
+.nav-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: var(--soft-grey);
+}
+.nav-section svg {
+  width: 100px;
+}
+.nav-section .nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-section .nav-items a {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+.nav-section .nav-items li {
+  list-style-type: none;
+  margin: 0 0.7rem;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: var(--hero-min-height);
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--soft-background-color);
+}
+.hero-section .left-content {
+  min-height: var(--hero-min-height);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 500px;
+}
+.hero-section .left-content h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--complement_color);
+  font-size: 3rem;
+}
+.hero-section .left-content p {
+  color: rgb(62, 54, 54);
+  margin-top: 0.9rem;
+  max-width: 300px;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.hero-section .right-content img {
+  width: 90%;
+  max-width: 600px;
+}/*# sourceMappingURL=style.css.map */
