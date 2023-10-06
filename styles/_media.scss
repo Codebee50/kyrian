@@ -1,0 +1,99 @@
+@media screen and (max-width: 1080px){
+    .nav-section{
+        padding: 1.5rem 40px;
+    }
+}
+
+
+@media screen and (max-width: 610px){
+    .nav-section{
+        padding: 1.5rem 30px;
+        .left-nav{
+            width: 100%;
+            justify-content: space-between;
+
+            .mobile{
+                display: block;
+            }
+
+            
+            .nav{
+                width: 250px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -700px;
+                transition: right ease-in-out 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--deep-background);
+                z-index: 999;
+
+
+
+                .close-nav{
+                    display: block;
+                }
+
+                ul{
+                    flex-direction: column;
+                    background-color: var(--deep-background);
+                    li{
+                        margin-top: 2rem;
+                    }
+                }
+            }
+
+            .nav.visible{
+                position: fixed;
+                top: 0;
+                
+                right: 0;
+                margin-left: 0;
+
+            }
+        }
+
+        .right-nav{
+            display: none;
+        }
+    }
+
+
+    .blurrable.blurred{
+        filter: blur(5px);
+    }
+}
+
+@media screen and (max-width: 382px){
+    .nav-section{
+        padding: 1.5rem 20px;
+    }
+    .introduction-section{
+        margin-top: 35px;
+        h1{
+            font-size: 3rem;
+            //max-width: 250px;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 330px){
+    .nav-section{
+        padding: 1.5rem 20px;
+    }
+    .introduction-section{
+        h1{
+            font-size: 2.5rem;
+            //max-width: 250px;
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}

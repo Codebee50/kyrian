@@ -62,7 +62,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 80px;
+  padding: 1.5rem 50px;
 }
 .nav-section .left-nav {
   display: flex;
@@ -78,8 +78,24 @@ body {
   fill: var(--complement-color);
   scale: 1.5;
 }
+.nav-section .left-nav .mobile {
+  display: none;
+}
+.nav-section .left-nav .mobile i {
+  font-size: 1.5rem;
+  color: var(--complement-color);
+}
 .nav-section .left-nav .nav {
   margin-left: 80px;
+}
+.nav-section .left-nav .nav .close-nav {
+  display: none;
+  color: var(--complement-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
 }
 .nav-section .left-nav .nav ul {
   display: flex;
@@ -154,4 +170,82 @@ body {
   transform: translate(0px, -3px);
   scale: 1.2;
   color: var(--complement-color);
+}
+
+@media screen and (max-width: 1080px) {
+  .nav-section {
+    padding: 1.5rem 40px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .nav-section {
+    padding: 1.5rem 30px;
+  }
+  .nav-section .left-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-section .left-nav .mobile {
+    display: block;
+  }
+  .nav-section .left-nav .nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -700px;
+    transition: right ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deep-background);
+    z-index: 999;
+  }
+  .nav-section .left-nav .nav .close-nav {
+    display: block;
+  }
+  .nav-section .left-nav .nav ul {
+    flex-direction: column;
+    background-color: var(--deep-background);
+  }
+  .nav-section .left-nav .nav ul li {
+    margin-top: 2rem;
+  }
+  .nav-section .left-nav .nav.visible {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+  }
+  .nav-section .right-nav {
+    display: none;
+  }
+  .blurrable.blurred {
+    filter: blur(5px);
+  }
+}
+@media screen and (max-width: 382px) {
+  .nav-section {
+    padding: 1.5rem 20px;
+  }
+  .introduction-section {
+    margin-top: 35px;
+  }
+  .introduction-section h1 {
+    font-size: 3rem;
+  }
+  .introduction-section h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .nav-section {
+    padding: 1.5rem 20px;
+  }
+  .introduction-section h1 {
+    font-size: 2.5rem;
+  }
+  .introduction-section h2 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

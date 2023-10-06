@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 80px;
+    padding: 1.5rem 50px;
 
     .left-nav{
         display: flex;
@@ -15,16 +15,34 @@
             width: 30px;
             fill:white;
             transition: all ease-in-out 0.5s;
-    
         }
     
         svg:hover{
             fill: var(--complement-color);
             scale: 1.5;
         }
+
+        .mobile{
+            display: none;
+            i{
+                font-size: 1.5rem;
+                color: var(--complement-color);
+            }
+        }
     
         .nav{
             margin-left: 80px;
+
+            .close-nav{
+                display: none;
+                color: var(--complement-color);
+                font-size: 2rem;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 1.5rem;
+            }
+
             ul{
                 display: flex;
                 flex-direction: row;
@@ -118,3 +136,5 @@
         }
     }
 }
+
+@import 'media';
