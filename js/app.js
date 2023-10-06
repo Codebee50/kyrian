@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', function(e){
 })
 
 function showNavBar(){
-    const navBar = document.querySelector('.nav')
-    navBar.classList.add('visible')
-
     const blurrables = document.querySelectorAll('.blurrable')
     blurrables.forEach((blurrable)=>{
         blurrable.classList.add('blurred')
     })
+
+
+    const navBar = document.querySelector('.nav')
+    navBar.classList.add('visible')
+   
 }
 
 function hideNavBar(){

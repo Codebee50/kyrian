@@ -123,6 +123,9 @@ body {
   flex-direction: row;
   align-items: center;
 }
+.nav-section .left-nav .nav ul .mobile-resume {
+  display: none;
+}
 .nav-section .left-nav .nav ul li {
   list-style-type: none;
   margin: 0 0.9rem;
@@ -231,6 +234,10 @@ body {
   }
   .nav-section .left-nav .nav ul li {
     margin-top: 2rem;
+  }
+  .nav-section .left-nav .nav ul .mobile-resume {
+    display: block;
+    margin-top: 100px;
   }
   .nav-section .left-nav .nav.visible {
     position: fixed;
