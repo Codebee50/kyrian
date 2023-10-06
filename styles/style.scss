@@ -1,82 +1,120 @@
 @import 'base';
 
 .nav-section{
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3rem;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    background-color: var(--soft-grey);
+    padding: 1.5rem 80px;
 
-    svg{
-        width: 100px;
-    }
-
-    .nav-items{
+    .left-nav{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-
-        a{
-            text-decoration: none;
-            color: rgb(66, 66, 66);
+        svg{
+            width: 30px;
+            fill:white;
+            transition: all ease-in-out 0.5s;
+    
         }
-
-        li{
-            list-style-type: none;
-            margin: 0 0.7rem;
-
+    
+        svg:hover{
+            fill: var(--complement-color);
+            scale: 1.5;
+        }
+    
+        .nav{
+            margin-left: 80px;
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                li{
+                    list-style-type: none;
+                    margin: 0 0.9rem;
+    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 0.9rem;
+                    }
+                    a:hover{
+                        color: var(--complement-color);
+                        transition: all ease-in-out 0.5s;
+                    }
+                }
+    
+                li.active{
+                    list-style-type:disc;
+                }
+    
+                li::marker{
+                    color: var(--complement-color);
+                    font-size: 0.9rem;
+                }
+            }
+            
         }
     }
-
+    
 }
 
 
-.hero-section{
-    width: 100%;
-    min-height: var(--hero-min-height);
-    margin-top: 60px;
+.introduction-section{
+    margin-top: 0.9rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
-    background-color: var(--soft-background-color);
-    .left-content{
-        min-height: var(--hero-min-height);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .txt-greeting{
+        color: var(--complement-color);
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 3.5rem;
+        //color: #CAE7C6;
+        color: #CED6F3;
+    }
+
+    h2{
+        font-family: 'inter', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        //color: #CAE7C6;
+        color: var(--root-txt-color);
+    }
+
+    .txt-speech{
+        margin-top: 30px;
+        width: 90%;
+        max-width: 700px;
+        color: var(--root-txt-color);
+        font-size: 0.9rem;
+        line-height: 1.7;
+
+    }
+
+    .connect-list{
+        margin-top: 30px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        max-width: 500px;
-        
-        h1{
-            font-family: 'Archivo Black', sans-serif;
-            color: var(--complement_color);
-            font-size: 3rem;
+        flex-direction: row;
+        align-items: center;
+
+        i{
+            color: var(--root-txt-color);
+            font-size: 2rem;
+            margin: 0 0.9rem;
+            transition: transform 0.3s ease; /* Add smooth transition */
+            transition: all ease-in-out 0.3s;
         }
 
-        p{
-            color: rgb(62, 54, 54);
-            margin-top: 0.9rem;
-            max-width: 300px;
-            font-size: 0.9rem;
-            line-height: 1.4rem;
-            
-            
+        i:hover{
+            transform: translate(0px, -3px);
+            scale: 1.2;
+            color: var(--complement-color);
         }
     }
-
-    .right-content{
-        img{
-            width: 90%;
-            max-width: 600px;
-        }
-    }
-
 }

@@ -1,90 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "inter", sans-serif;
+:root {
+  --deep-background:#12141A;
+  --complement-color: #65D46E;
+  --root-txt-color:#8A92AD;
 }
 
-:root {
-  --light-blue: #1C83FF;
-  --darker-blue: #1C83FF;
-  --hero-min-height: 90vh;
-  --complement_color: #393B4A;
-  --soft-background-color: #EAF2F9;
-  --soft-grey: #F9F9F9;
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--deep-background);
+}
+
+.btn-one {
+  background-color: var(--deep-background);
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
+  transition: all ease-in-out 0.5s;
+}
+.btn-one i {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.btn-one:hover {
+  background-color: var(--complement-color);
+  color: white;
+  border: none;
+}
+.btn-one:hover i {
+  transform: translate(3px, -3px);
 }
 
 .section {
-  padding: 0 5.5rem;
-}
-
-.nav-section {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3rem;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  background-color: var(--soft-grey);
-}
-.nav-section svg {
-  width: 100px;
-}
-.nav-section .nav-items {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.nav-section .nav-items a {
-  text-decoration: none;
-  color: rgb(66, 66, 66);
-}
-.nav-section .nav-items li {
-  list-style-type: none;
-  margin: 0 0.7rem;
+.section .section-body {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 60vh;
 }
 
-.hero-section {
-  width: 100%;
-  min-height: var(--hero-min-height);
-  margin-top: 60px;
+.nav-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--soft-background-color);
+  padding: 1.5rem 80px;
 }
-.hero-section .left-content {
-  min-height: var(--hero-min-height);
+.nav-section .left-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-section .left-nav svg {
+  width: 30px;
+  fill: white;
+  transition: all ease-in-out 0.5s;
+}
+.nav-section .left-nav svg:hover {
+  fill: var(--complement-color);
+  scale: 1.5;
+}
+.nav-section .left-nav .nav {
+  margin-left: 80px;
+}
+.nav-section .left-nav .nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-section .left-nav .nav ul li {
+  list-style-type: none;
+  margin: 0 0.9rem;
+}
+.nav-section .left-nav .nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.nav-section .left-nav .nav ul li a:hover {
+  color: var(--complement-color);
+  transition: all ease-in-out 0.5s;
+}
+.nav-section .left-nav .nav ul li.active {
+  list-style-type: disc;
+}
+.nav-section .left-nav .nav ul li::marker {
+  color: var(--complement-color);
+  font-size: 0.9rem;
+}
+
+.introduction-section {
+  margin-top: 0.9rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  max-width: 500px;
 }
-.hero-section .left-content h1 {
-  font-family: "Archivo Black", sans-serif;
-  color: var(--complement_color);
-  font-size: 3rem;
+.introduction-section .txt-greeting {
+  color: var(--complement-color);
 }
-.hero-section .left-content p {
-  color: rgb(62, 54, 54);
-  margin-top: 0.9rem;
-  max-width: 300px;
-  font-size: 0.9rem;
-  line-height: 1.4rem;
+.introduction-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #CED6F3;
 }
-.hero-section .right-content img {
+.introduction-section h2 {
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--root-txt-color);
+}
+.introduction-section .txt-speech {
+  margin-top: 30px;
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
+  color: var(--root-txt-color);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.introduction-section .connect-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.introduction-section .connect-list i {
+  color: var(--root-txt-color);
+  font-size: 2rem;
+  margin: 0 0.9rem;
+  transition: transform 0.3s ease; /* Add smooth transition */
+  transition: all ease-in-out 0.3s;
+}
+.introduction-section .connect-list i:hover {
+  transform: translate(0px, -3px);
+  scale: 1.2;
+  color: var(--complement-color);
 }/*# sourceMappingURL=style.css.map */
