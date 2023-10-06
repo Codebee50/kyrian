@@ -45,6 +45,27 @@ body {
   transform: translate(3px, -3px);
 }
 
+.btn-two {
+  background-color: var(--complement-color);
+  color: var(--deep-background);
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 1.5rem;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+.btn-two i {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.btn-two:hover i {
+  transform: translate(0px, 3px);
+}
+
 .section {
   width: 100%;
   display: flex;
