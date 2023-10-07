@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
 
 *{
@@ -9,20 +9,24 @@
 }
 
 
+
+
 :root{
-    --deep-background:#12141A;
+    --deep-background:#12141a;
     --complement-color: #65D46E;
     --root-txt-color:#8A92AD;
+    --vibrant-txt-color: #CED6F3;
+
+    --dim-root-txt-color:#63697c;
+
 }
 
 body{
     font-family: 'Inter', sans-serif;
+    background-color: var(--deep-background);
+
 }
 
-body{
-   
-    background-color: var(--deep-background);
-}
 
 .btn-one{
     background-color: var(--deep-background);
@@ -51,6 +55,7 @@ body{
     i{
         transform: translate(3px, -3px);
     }
+
 }
 
 
@@ -70,7 +75,6 @@ body{
         font-size: 0.9rem;
         margin-left: 0.5rem;
         transition: transform 0.3s ease; /* Add smooth transition */
-
     }
 }
 
@@ -96,6 +100,27 @@ body{
         max-width: 1200px;
         min-height: 60vh;
     }
+}
+
+
+.circle-sm{
+    width: 10px;
+    height: 10px;
+    background-color: var(--complement-color);
+    border-radius: 50%;
+}
+
+.square-sm{
+    width: 10px;
+    height: 10px;
+    background-color: var(--complement-color);
+}
+
+.line{
+    width: 80%;
+    max-width: 300px;
+    height: 0.1px;
+    background-color: var(--root-txt-color);
 }
 
 

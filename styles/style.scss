@@ -98,7 +98,7 @@
         font-weight: 700;
         font-size: 3.5rem;
         //color: #CAE7C6;
-        color: #CED6F3;
+        color: var(--vibrant-txt-color);
     }
 
     h2{
@@ -139,6 +139,83 @@
             color: var(--complement-color);
         }
     }
+}
+
+.about-section{
+    margin-top: 70px;
+
+    .about-section-body{
+        padding: 0 100px;
+
+        .about-section-header{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+    
+            .section-name{
+                color: var(--vibrant-txt-color);
+                font-size: 1.2rem;
+                margin-left: 0.9rem;
+            }
+
+            .line{
+                margin-left: 0.9rem;
+            }
+        }
+
+        .about-section-content{
+            .content-intro{
+                color: var(--root-txt-color);
+                margin-top: 0.4rem;
+                font-size: 1.5rem;
+            }
+
+            .content-content{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+
+                img{
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                    background-color: #3C8399;
+                    border-radius: 5px;
+                    filter: grayscale(1);
+                    transition: all ease-in-out 0.3s;
+                }
+
+                img:hover{
+                    filter: grayscale(0);
+                }
+
+                .right-content{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0.9rem;
+
+                    p{
+                        max-width: 600px;
+                        color: var(--root-txt-color);
+                        font-size: 1rem;
+                        line-height: 1.8;
+
+                        span{
+                            color: var(--complement-color);
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+ 
+
+    
 }
 
 @import 'media';
