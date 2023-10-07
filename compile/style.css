@@ -103,7 +103,7 @@ body {
 .line {
   width: 80%;
   max-width: 300px;
-  height: 0.1px;
+  height: 0.1rem;
   background-color: var(--root-txt-color);
 }
 
@@ -419,6 +419,19 @@ body {
   .about-section .about-section-content .content-content .right-content {
     margin-left: 0 !important;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-section-header .line {
+    width: 50%;
+    margin-left: 0.9rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-section-content .content-intro {
+    color: var(--root-txt-color);
+    margin-top: 0.4rem;
+    font-size: 1.2rem !important;
   }
 }
 @media screen and (max-width: 800px) {
