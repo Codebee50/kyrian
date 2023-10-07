@@ -103,3 +103,55 @@
         }
     }
 }
+
+
+//============== MEDIA QUERIES OR ABOUT SECTION =====================
+
+@media screen and (max-width:1000px ){
+    .about-section{
+        .about-section-body{
+            padding: 80px;
+        }
+    }
+}
+
+@media screen and (max-width:900px ){
+    .about-section{
+        .about-section-body{
+            padding: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .about-section{
+        .about-section-body{
+            padding: 0px;
+        }
+
+        .about-section-content{
+            .content-content{
+                display: flex;
+                flex-direction: column !important;
+               
+                .right-content{
+                    margin-left: 0 !important;
+                    margin-top: 10px;
+                }
+
+                
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:800px){
+    .about-section{
+        .about-section-body{
+            padding: 0px;
+        }
+    }
+}
+
+

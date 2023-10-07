@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --deep-background:#12141a;
   --complement-color: #65D46E;
@@ -45,15 +49,16 @@ body {
 }
 
 .btn-two {
-  background-color: var(--complement-color);
-  color: var(--deep-background);
-  border: none;
+  background-color: var(--deep-background);
+  color: var(--vibrant-txt-color);
+  border: 0.5px solid var(--vibrant-txt-color);
   border-radius: 50px;
   display: flex;
   align-items: center;
-  padding: 0.9rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
+  border: none;
 }
 .btn-two i {
   font-size: 0.9rem;
@@ -61,6 +66,11 @@ body {
   transition: transform 0.3s ease; /* Add smooth transition */
 }
 
+.btn-two:hover {
+  background-color: var(--complement-color);
+  color: var(--deep-background);
+  scale: 1.05;
+}
 .btn-two:hover i {
   transform: translate(0px, 3px);
 }
@@ -111,7 +121,7 @@ body {
 }
 .nav-section .left-nav svg {
   width: 30px;
-  fill: white;
+  fill: var(--vibrant-txt-color);
   transition: all ease-in-out 0.5s;
 }
 .nav-section .left-nav svg:hover {
@@ -386,5 +396,33 @@ body {
   }
   .introduction-section h2 {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-section .about-section-body {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-section .about-section-body {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-section .about-section-body {
+    padding: 0px;
+  }
+  .about-section .about-section-content .content-content {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .about-section .about-section-content .content-content .right-content {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-section .about-section-body {
+    padding: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

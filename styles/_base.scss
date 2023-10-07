@@ -8,7 +8,9 @@
     box-sizing: border-box;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 :root{
@@ -60,16 +62,16 @@ body{
 
 
 .btn-two{
-    background-color: var(--complement-color);
-    color: var(--deep-background);
-    //border: 0.5px solid var(--complement-color);
-    border: none;
+    background-color: var(--deep-background);
+    color: var(--vibrant-txt-color);
+    border: 0.5px solid var(--vibrant-txt-color);
     border-radius: 50px;
     display: flex;
     align-items: center;
-    padding: 0.9rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     transition: all ease-in-out 0.5s;
     cursor: pointer;
+    border: none;
     
     i{
         font-size: 0.9rem;
@@ -79,10 +81,9 @@ body{
 }
 
 .btn-two:hover{
-    // background-color: var(--complement-color);
-    // color: white;
-    // border: none;
-
+    background-color: var(--complement-color);
+    color: var(--deep-background);
+    scale: 1.05;
     i{
         transform: translate(0px, 3px);
     }
