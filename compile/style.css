@@ -617,4 +617,7 @@ body {
   .project-item .project-image-container .project-image {
     width: 100%;
   }
+  .project-item .project-details-container .project-description {
+    max-width: 700px;
+  }
 }/*# sourceMappingURL=style.css.map */
