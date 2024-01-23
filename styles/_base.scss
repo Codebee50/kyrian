@@ -111,6 +111,27 @@ body{
     border-radius: 50%;
 }
 
+.circle-sm-bg-1{
+    @extend .circle-sm;
+    background-color: #B85A8A;
+}
+
+.circle-sm-bg-2{
+    @extend .circle-sm;
+    background-color: #523E78;
+}
+
+.circle-sm-bg-3{
+    @extend .circle-sm;
+    background-color: #D25735;
+}
+
+.circle-sm-bg-4{
+    @extend .circle-sm;
+    background-color: #EEE170;
+}
+
+
 .square-sm{
     width: 10px;
     height: 10px;
@@ -124,5 +145,39 @@ body{
     background-color: var(--root-txt-color);
 }
 
+.middle-section-body{
+    padding: 0 100px;
 
+}
 
+.section-line-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .section-name{
+        color: var(--vibrant-txt-color);
+        font-size: 1.2rem;
+        margin-left: 0.9rem;
+    }
+
+    .line{
+        margin-left: 0.9rem;
+    }
+}
+
+.right-section-header{
+    @extend .section-line-header;
+    justify-content: flex-end;
+}
+
+.middle-section-header{
+    @extend .section-line-header;
+    justify-content: center;
+}
+
+.left-section-header{
+    @extend .section-line-header;
+    justify-content: flex-start;
+}

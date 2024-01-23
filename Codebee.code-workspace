@@ -11,5 +11,6 @@
 			"savePath": "./compile"
 		}
 	],
+	"liveServer.settings.port": 5501,
 	}
 }

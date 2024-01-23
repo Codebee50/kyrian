@@ -105,7 +105,34 @@
 }
 
 
-//============== MEDIA QUERIES OR ABOUT SECTION =====================
+//============== MEDIA QUERIES Of ABOUT SECTION =====================
+
+@media screen and (max-width:1000px ){
+    .section-dynamic{
+        .sd-body{
+            padding: 80px;
+        }
+    }
+}
+
+@media screen and (max-width:900px ){
+    .section-dynamic{
+        .sd-body{
+            padding: 60px;
+        }
+    }
+}
+
+@media screen and (max-width:900px ){
+    .section-dynamic{
+        .sd-body{
+            padding: 0px;
+        }
+    }
+}
+
+
+
 
 @media screen and (max-width:1000px ){
     .about-section{
@@ -187,3 +214,25 @@
 }
 
 
+///////////// PROJECT STECTION QUERIES ////////////
+
+@media screen and (max-width:700px){
+    .project-item{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        padding-bottom: 30px;
+
+        .project-image-container{
+            width: 100%;
+
+            .project-image{
+                width: 100%;
+            }
+        }
+
+        // .project-details-container{
+        // }
+    }
+}
