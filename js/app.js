@@ -1,10 +1,4 @@
-class Projects {
-    constructor(name, lanugages){
-        this.name =name;
-        this.lanugages = lanugages;
-    }
-}
-
+const projectsContainer = document.querySelector('.projects-container')
 
 
 document.addEventListener('DOMContentLoaded', function(e){
@@ -20,18 +14,64 @@ document.addEventListener('DOMContentLoaded', function(e){
         hideNavBar()
     })
 
-    listOfProjects = populateProjectList()
-    var languagesbars = document.querySelectorAll(".languages-bar");
-    languagesbars.forEach(function(lanuguagebar){
-        barid = lanuguagebar.id
-        setupLanugageBar(barid)
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data=> {
+        populateProjectsUi(data.projects)
     })
+
+    
 })
 
-function setupLanugageBar(barid){
-    let lanugageBar = document.getElementById(barid)
-    console.log(lanugageBar.offsetWidth)
+const randomInt = (min,max) => Math.trunc(Math.random() * (max-min)+1) + min
+
+
+function populateProjectsUi(projects){
+    projects.forEach(function(project){
+        console.log(project)
+        const projectItem= `<div class="project-item">
+        <div class="project-image-container">
+            <img src="${project.img}" alt="Project image" class="project-image" loading="lazy">
+        </div>
+    
+        <div class="project-details-container">
+            <h2 class="project-title">Data Gridder</h2>
+            <p class="project-description">
+               ${project.description}
+            </p>
+    
+            <div class="project-links-container">
+                <i class="ri-github-line"></i>
+                <i class="ri-external-link-line"></i>
+            </div>
+    
+            <div class="languages-container">
+                <h4>Languages</h4>
+                <div class="language-items-container languages-${project.id}">
+                </div>
+            </div>
+        </div>
+    </div>`   
+
+    projectsContainer.insertAdjacentHTML("beforeend", projectItem)
+
+    const projectLanguages = document.querySelector(`.languages-${project.id}`)
+    project.languages.forEach(function(language){
+        const languageHTML = `<div class="language-item">
+        <span class="circle-sm lang-sm circle-sm-bg-${randomInt(1,4)}" ></span>
+        <p>${language}</p>
+    </div>
+`
+    if(projectLanguages){
+        projectLanguages.insertAdjacentHTML('beforeend', languageHTML)
+    }
+
+
+    })
+})
+  
 }
+
 
 function showNavBar(){
     const blurrables = document.querySelectorAll('.blurrable')
@@ -43,22 +83,6 @@ function showNavBar(){
     const navBar = document.querySelector('.nav')
     navBar.classList.add('visible')
    
-}
-
-function populateProjectList(){
-    let productList = []
-    let datagridderskills = {
-        "SCSS": 29,
-        "CSS": 27.4,
-        "HTML": 12.9,
-        "Python": 10.9,
-        "JavaScript": 10.8
-    }
-
-    let datagridder = new populateProjectList('datagridder', datagridderskills)
-    productList.push(datagridder)
-
-    return productList
 }
 
 function hideNavBar(){

@@ -1,0 +1,20 @@
+{
+    "status": 200,
+    "projects": [
+        {
+            "id": 1,
+            "img": "img/projects/gridderfull.jpeg", 
+            "title": "Data Gridder",
+            "description": "Datagridder is a tool built to solve problem of collecting and orgarnizing data in Nigerian Universities. With a simple to use user interface, class representatives can easliy collect data, this data is then automatically sorted into a well orgarnized .docx document table available for download.",      
+            "languages": ["SCSS", "HTML", "Python Django", "Javascript"]
+        },
+
+        {
+            "id": 2,
+            "img": "img/projects/bridgegap.jpeg", 
+            "title": "Bridgegap clothing",
+            "description": "While working on the backend, collaborated with a frontend developer to deliver a website for a clothing brand for the purpose of showcasing thier products",      
+            "languages": ["SCSS", "HTML", "Python Django", "Javascript"]
+        }
+    ]
+}

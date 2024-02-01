@@ -366,6 +366,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 30px;
 }
 .project-item .project-image-container {
   width: 90%;
@@ -617,7 +618,17 @@ body {
   .project-item .project-image-container .project-image {
     width: 100%;
   }
+  .project-item .project-details-container {
+    margin-top: 0;
+  }
   .project-item .project-details-container .project-description {
     max-width: 700px;
+    margin-top: 5px;
+  }
+  .project-item .project-details-container .languages-container {
+    margin-top: 15px;
+  }
+  .project-item .project-details-container .languages-container .language-items-container {
+    margin-top: 4px;
   }
 }/*# sourceMappingURL=style.css.map */
