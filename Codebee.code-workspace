@@ -1,16 +1,18 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"liveSassCompile.settings.formats": [{
-			"format": "expanded",
-			"extensionName": ".css",
-			"savePath": "./compile"
-		}
-	],
-	"liveServer.settings.port": 5501,
-	}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "./compile"
+      }
+    ],
+    "liveServer.settings.port": 5501,
+    "files.autoSave": "afterDelay"
+  }
 }

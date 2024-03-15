@@ -292,7 +292,7 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background-color: #3C8399;
+  background-color: #3c8399;
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
 }
@@ -358,7 +358,6 @@ body {
 }
 
 .project-item {
-  background-color: #1B1E26;
   width: 100%;
   min-height: 60vh;
   margin-top: 50px;
